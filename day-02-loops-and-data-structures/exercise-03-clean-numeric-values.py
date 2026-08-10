@@ -19,6 +19,15 @@ for value in raw_values:
 
     cleaned_values.append(value)
 
+# Data Cleaning Using List Comprehension
+
+# Filter the same valid integer values using a concise list comprehension.
+cleaned_values_compact = [
+    value for value in raw_values
+    if isinstance(value, int)
+]
+
 # Output
 
 print(f"Cleaned values using loop: {cleaned_values}")
+print(f"Cleaned values using list comprehension: {cleaned_values_compact}")
